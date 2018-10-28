@@ -14,7 +14,7 @@ public class Tower : ITower
             Sector = sector;
         }
         public int Number { get; }
-        public bool Activated { get; set; }
+        public bool Activated{get { return Activator != APIActivator.NONE; }}
         public ISector Sector { get; }
         public APIActivator Activator { get; set; }
 
@@ -22,7 +22,6 @@ public class Tower : ITower
         {
             if (!Activated && activator != APIActivator.NONE)
             {
-                Activated = true;
                 Activator = activator;
                 TowerActivationEvent.Call(this, Activator.ToString());
             }
@@ -32,7 +31,6 @@ public class Tower : ITower
         {
             if (Activated)
             {
-                Activated = false;
                 Activator = APIActivator.NONE;
                 TowerDeactivationEvent.Call(this);
             }

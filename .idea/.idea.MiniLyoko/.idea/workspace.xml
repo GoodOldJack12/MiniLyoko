@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403e8a21-6cbc-4efa-9876-965852ba6753" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MiniLyoko/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/Tower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/MiniLyoko.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/MiniLyoko.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/MiniLyoko.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/MiniLyoko.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniLyoko/obj/Debug/MiniLyoko.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/obj/Debug/MiniLyoko.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/obj/Debug/MiniLyoko.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/obj/Debug/MiniLyoko.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/obj/Debug/MiniLyoko.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/obj/Debug/MiniLyoko.pdb" afterDir="false" />
     </list>
@@ -34,49 +38,49 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1951" />
+          <entry key="cs" value="2520" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1951" />
+          <entry key="C#" value="2520" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MiniLyoko/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="396">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
               <folding>
-                <marker date="1540766240926" expanded="true" signature="6:135" ph="..." />
-                <marker date="1540766240926" expanded="true" signature="156:777" ph="{...}" />
-                <marker date="1540766240926" expanded="true" signature="185:775" ph="{...}" />
-                <marker date="1540766240926" expanded="true" signature="238:769" ph="{...}" />
+                <marker date="1540768042040" expanded="true" signature="6:151" ph="..." />
+                <marker date="1540768042040" expanded="true" signature="172:1629" ph="{...}" />
+                <marker date="1540768042040" expanded="true" signature="201:1627" ph="{...}" />
+                <marker date="1540768042040" expanded="true" signature="254:1621" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MiniLyoko/Tower.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="246">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
-                <marker date="1540766524207" expanded="true" signature="6:140" ph="..." />
-                <marker date="1540766524207" expanded="true" signature="161:1361" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="192:1359" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="247:325" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="549:803" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="621:793" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="845:1053" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="882:1043" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="1108:1353" ph="{...}" />
-                <marker date="1540766524207" expanded="true" signature="1145:1343" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="6:140" ph="..." />
+                <marker date="1540767828837" expanded="true" signature="161:1363" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="192:1361" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="247:325" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="583:803" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="655:793" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="845:1018" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="882:1008" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="1073:1355" ph="{...}" />
+                <marker date="1540767828837" expanded="true" signature="1147:1345" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,8 +121,8 @@
       <list>
         <option value="$PROJECT_DIR$/MiniLyoko/tower.cs" />
         <option value="$PROJECT_DIR$/MiniLyoko/DebugListener.cs" />
-        <option value="$PROJECT_DIR$/MiniLyoko/Program.cs" />
         <option value="$PROJECT_DIR$/MiniLyoko/Tower.cs" />
+        <option value="$PROJECT_DIR$/MiniLyoko/Program.cs" />
       </list>
     </option>
   </component>
@@ -224,12 +228,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540756250621</updated>
-      <workItem from="1540756251918" duration="9619000" />
+      <workItem from="1540756251918" duration="11161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9619000" />
+    <option name="totallyTimeSpent" value="11161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,34 +312,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MiniLyoko/Program.cs">
+    <entry file="file://$PROJECT_DIR$/MiniLyoko/Tower.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="246">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
-            <marker date="1540766240926" expanded="true" signature="6:135" ph="..." />
-            <marker date="1540766240926" expanded="true" signature="156:777" ph="{...}" />
-            <marker date="1540766240926" expanded="true" signature="185:775" ph="{...}" />
-            <marker date="1540766240926" expanded="true" signature="238:769" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="6:140" ph="..." />
+            <marker date="1540767828837" expanded="true" signature="161:1363" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="192:1361" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="247:325" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="583:803" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="655:793" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="845:1018" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="882:1008" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="1073:1355" ph="{...}" />
+            <marker date="1540767828837" expanded="true" signature="1147:1345" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MiniLyoko/Tower.cs">
+    <entry file="file://$PROJECT_DIR$/MiniLyoko/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="396">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding>
-            <marker date="1540766524207" expanded="true" signature="6:140" ph="..." />
-            <marker date="1540766524207" expanded="true" signature="161:1361" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="192:1359" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="247:325" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="549:803" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="621:793" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="845:1053" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="882:1043" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="1108:1353" ph="{...}" />
-            <marker date="1540766524207" expanded="true" signature="1145:1343" ph="{...}" />
+            <marker date="1540768042040" expanded="true" signature="6:151" ph="..." />
+            <marker date="1540768042040" expanded="true" signature="172:1629" ph="{...}" />
+            <marker date="1540768042040" expanded="true" signature="201:1627" ph="{...}" />
+            <marker date="1540768042040" expanded="true" signature="254:1621" ph="{...}" />
           </folding>
         </state>
       </provider>
