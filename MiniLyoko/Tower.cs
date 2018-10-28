@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using LyokoAPI.Events;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
@@ -14,11 +13,11 @@ public class Tower : ITower
             Sector = sector;
         }
         public int Number { get; }
-        public bool Activated{get { return Activator != APIActivator.NONE; }}
+        public bool Activated => Activator != APIActivator.NONE;
         public ISector Sector { get; }
-        public APIActivator Activator { get; set; }
+        public APIActivator Activator { get; set; } = APIActivator.NONE;
 
-        public void activate(APIActivator activator)
+       public void activate(APIActivator activator)
         {
             if (!Activated && activator != APIActivator.NONE)
             {
