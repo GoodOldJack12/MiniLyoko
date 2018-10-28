@@ -40,7 +40,7 @@ public class Tower : ITower
 
         public void hijack(APIActivator newActivator)
         {
-            if (Activated)
+            if (Activated && newActivator != APIActivator.NONE)
             {
                 APIActivator oldActivator = Activator;
                 Activator = newActivator;
