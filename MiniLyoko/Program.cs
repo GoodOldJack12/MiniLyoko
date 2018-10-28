@@ -1,5 +1,6 @@
 ﻿using System;
 using LyokoAPI.API;
+using LyokoAPI.Events;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
 
@@ -9,10 +10,10 @@ namespace MiniLyoko
     {
         public static void Main(string[] args)
         {
-            ITower tower = new APITower("lyoko", "ice", 1, true);
-            tower.Activator = LyokoParser.ParseActivator("XANA");
-            Console.WriteLine(tower.Sector.Name);
-            Console.WriteLine(tower.Number);
+            Console.Clear();
+            LyokoAPI.LyokoAPI.EnsureInitialized();
+            DebugListener.Initialize();
+            
         }
     }
 }
