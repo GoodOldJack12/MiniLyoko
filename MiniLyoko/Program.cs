@@ -18,6 +18,8 @@ namespace MiniLyoko
             Tower lyokoForest5 = new Tower(5, lyokoForest);
             lyokoForest5.activate(APIActivator.HOPPER);
             lyokoForest5.hijack(APIActivator.XANA);
+            lyokoForest5.activate(APIActivator.NONE);
+            lyokoForest5.deactivate();
         }
     }
 }

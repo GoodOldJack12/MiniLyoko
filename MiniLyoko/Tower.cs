@@ -28,7 +28,7 @@ public class Tower : ITower
             }
         }
         
-        public void deactivate(APIActivator activator)
+        public void deactivate()
         {
             if (Activated)
             {
