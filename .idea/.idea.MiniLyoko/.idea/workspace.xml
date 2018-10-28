@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403e8a21-6cbc-4efa-9876-965852ba6753" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MiniLyoko/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniLyoko/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/Tower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniLyoko/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiniLyoko/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniLyoko/DebugListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/DebugListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/LyokoAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniLyoko/bin/Debug/MiniLyoko.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLyoko/bin/Debug/MiniLyoko.exe" afterDir="false" />
@@ -22,6 +22,7 @@
     <session id="1488878653">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -38,28 +39,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2520" />
+          <entry key="cs" value="2569" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2520" />
+          <entry key="C#" value="2569" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MiniLyoko/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+            <state relative-caret-position="498">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
-                <marker date="1540768042040" expanded="true" signature="6:151" ph="..." />
-                <marker date="1540768042040" expanded="true" signature="172:1629" ph="{...}" />
-                <marker date="1540768042040" expanded="true" signature="201:1627" ph="{...}" />
-                <marker date="1540768042040" expanded="true" signature="254:1621" ph="{...}" />
+                <marker date="1540769360869" expanded="true" signature="6:151" ph="..." />
+                <marker date="1540769360869" expanded="true" signature="172:1576" ph="{...}" />
+                <marker date="1540769360869" expanded="true" signature="201:1574" ph="{...}" />
+                <marker date="1540769360869" expanded="true" signature="254:1568" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MiniLyoko/Tower.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="396">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <marker date="1540767828837" expanded="true" signature="6:140" ph="..." />
                 <marker date="1540767828837" expanded="true" signature="161:1363" ph="{...}" />
@@ -86,21 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MiniLyoko/DebugListener.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="121" selection-start-line="32" selection-start-column="121" selection-end-line="32" selection-end-column="121" />
+            <state relative-caret-position="418">
+              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
               <folding>
-                <marker date="1540765479442" expanded="true" signature="6:115" ph="..." />
-                <marker date="1540765479442" expanded="true" signature="136:1484" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="169:1482" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="217:530" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="586:722" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="783:906" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="1027:1171" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="1234:1355" ph="{...}" />
-                <marker date="1540765479442" expanded="true" signature="1398:1476" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="6:115" ph="..." />
+                <marker date="1540769371802" expanded="true" signature="136:1526" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="169:1524" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="217:530" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="586:722" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="825:948" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="1069:1213" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="1276:1397" ph="{...}" />
+                <marker date="1540769371802" expanded="true" signature="1440:1518" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -120,9 +121,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/MiniLyoko/tower.cs" />
-        <option value="$PROJECT_DIR$/MiniLyoko/DebugListener.cs" />
         <option value="$PROJECT_DIR$/MiniLyoko/Tower.cs" />
         <option value="$PROJECT_DIR$/MiniLyoko/Program.cs" />
+        <option value="$PROJECT_DIR$/MiniLyoko/DebugListener.cs" />
       </list>
     </option>
   </component>
@@ -228,12 +229,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540756250621</updated>
-      <workItem from="1540756251918" duration="11161000" />
+      <workItem from="1540756251918" duration="12456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11161000" />
+    <option name="totallyTimeSpent" value="12456000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,11 +263,11 @@
       <window_info anchor="bottom" id="Build" weight="0.32879817" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32993197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32993197" />
       <window_info anchor="right" id="Errors In Solution" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Unit Tests Coverage" />
@@ -294,28 +295,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MiniLyoko/DebugListener.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="121" selection-start-line="32" selection-start-column="121" selection-end-line="32" selection-end-column="121" />
-          <folding>
-            <marker date="1540765479442" expanded="true" signature="6:115" ph="..." />
-            <marker date="1540765479442" expanded="true" signature="136:1484" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="169:1482" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="217:530" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="586:722" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="783:906" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="1027:1171" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="1234:1355" ph="{...}" />
-            <marker date="1540765479442" expanded="true" signature="1398:1476" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MiniLyoko/Tower.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="396">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
             <marker date="1540767828837" expanded="true" signature="6:140" ph="..." />
             <marker date="1540767828837" expanded="true" signature="161:1363" ph="{...}" />
@@ -333,13 +316,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MiniLyoko/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        <state relative-caret-position="498">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
-            <marker date="1540768042040" expanded="true" signature="6:151" ph="..." />
-            <marker date="1540768042040" expanded="true" signature="172:1629" ph="{...}" />
-            <marker date="1540768042040" expanded="true" signature="201:1627" ph="{...}" />
-            <marker date="1540768042040" expanded="true" signature="254:1621" ph="{...}" />
+            <marker date="1540769360869" expanded="true" signature="6:151" ph="..." />
+            <marker date="1540769360869" expanded="true" signature="172:1576" ph="{...}" />
+            <marker date="1540769360869" expanded="true" signature="201:1574" ph="{...}" />
+            <marker date="1540769360869" expanded="true" signature="254:1568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniLyoko/DebugListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <marker date="1540769371802" expanded="true" signature="6:115" ph="..." />
+            <marker date="1540769371802" expanded="true" signature="136:1526" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="169:1524" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="217:530" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="586:722" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="825:948" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="1069:1213" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="1276:1397" ph="{...}" />
+            <marker date="1540769371802" expanded="true" signature="1440:1518" ph="{...}" />
           </folding>
         </state>
       </provider>

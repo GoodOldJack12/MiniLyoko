@@ -23,7 +23,7 @@ namespace MiniLyoko
             Console.WriteLine("Xana has launched an attack, it activated: {0} {1}",tower.Sector.Name,tower.Number);
         }
 
-        private static void onTowerActivation(ITower tower)
+        private static void onTowerActivation(ITower tower) //TODO: Jack fix the activation listener.
         {
             Console.WriteLine("{0} activated {1} {2}",tower.Activator,tower.Sector.Name,tower.Number);
         }
