@@ -42,9 +42,8 @@ public class Tower : ITower
         {
             if (Activated)
             {
+                TowerHijackEvent.Call(this, Activator, activator);
                 Activator = activator;
-                TowerDeactivationEvent.Call(this);
-                TowerActivationEvent.Call(this, Activator.ToString());
             }
         }
     }
