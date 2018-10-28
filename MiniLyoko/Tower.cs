@@ -20,7 +20,7 @@ public class Tower : ITower
 
         public void activate(APIActivator activator)
         {
-            if (!Activated)
+            if (!Activated && activator != APIActivator.NONE)
             {
                 Activated = true;
                 Activator = activator;
