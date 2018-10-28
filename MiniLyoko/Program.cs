@@ -13,7 +13,10 @@ namespace MiniLyoko
             Console.Clear();
             LyokoAPI.LyokoAPI.EnsureInitialized();
             DebugListener.Initialize();
-            
+            IVirtualWorld lyoko = new APIVirtualWorld("lyoko");
+            ISector lyokoForest = new APISector(lyoko, "lyokoForest");
+            Tower lyokoForest5 = new Tower(5, lyokoForest);
+            lyokoForest5.activate(APIActivator.XANA);
         }
     }
 }
