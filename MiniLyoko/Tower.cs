@@ -38,12 +38,13 @@ public class Tower : ITower
             }
         }
 
-        public void hijack(APIActivator activator)
+        public void hijack(APIActivator newActivator)
         {
             if (Activated)
             {
-                TowerHijackEvent.Call(this, Activator, activator);
-                Activator = activator;
+                APIActivator oldActivator = Activator;
+                Activator = newActivator;
+                TowerHijackEvent.Call(this, oldActivator, newActivator);
             }
         }
     }
