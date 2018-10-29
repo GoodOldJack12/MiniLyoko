@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
 
 namespace MiniLyoko
@@ -6,13 +7,13 @@ namespace MiniLyoko
     public class Network
     {
         private bool seeded = false;
-        public List<IVirtualWorld> Vworlds { get; }
+        public List<VirtualWorld> Vworlds { get; }
         public Network()
         {
             Seed();
         }
 
-        public IVirtualWorld GetWorld(string name)
+        public VirtualWorld GetWorld(string name)
         {
             return Vworlds.Find(vworld => vworld.Name.Equals(name));
         }
@@ -44,7 +45,14 @@ namespace MiniLyoko
             }
             
         }
-        
+
+        private void ActivateTower(string virtualworld, string sector, int number, APIActivator activator)
+        {
+            if (HasWorld(virtualworld))
+            {
+                GetWorld(virtualworld).ActivateTower(sector,number,activator);
+            }
+        }
         
     }
 }
