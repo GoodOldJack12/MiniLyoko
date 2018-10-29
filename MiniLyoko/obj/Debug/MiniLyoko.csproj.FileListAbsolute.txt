@@ -1,9 +1,0 @@
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\bin\Debug\MiniLyoko.exe
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\bin\Debug\MiniLyoko.pdb
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\bin\Debug\LyokoAPI.dll
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\bin\Debug\LyokoAPI.pdb
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csprojAssemblyReference.cache
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csproj.CoreCompileInputs.cache
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csproj.CopyComplete
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.exe
-C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.pdb
