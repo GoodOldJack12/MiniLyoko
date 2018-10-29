@@ -25,16 +25,16 @@ namespace MiniLyoko
             Tower lyokoDesert3 = new Tower(3, lyokoDesert);
             Tower lyokoMountain4 = new Tower(4, lyokoMountain);
             Tower lyokoForest5 = new Tower(5, lyokoForest);
-            lyokoSector51.activate(APIActivator.XANA);
-            lyokoIce2.activate(APIActivator.XANA);
-            lyokoDesert3.activate(APIActivator.XANA);
-            lyokoMountain4.activate(APIActivator.XANA);
-            lyokoForest5.activate(APIActivator.XANA);
-            lyokoSector51.hijack(APIActivator.HOPPER);
-            lyokoIce2.deactivate();
-            lyokoDesert3.deactivate();
-            lyokoMountain4.deactivate();
-            lyokoForest5.deactivate();
+            lyokoSector51.Activate(APIActivator.XANA);
+            lyokoIce2.Activate(APIActivator.XANA);
+            lyokoDesert3.Activate(APIActivator.XANA);
+            lyokoMountain4.Activate(APIActivator.XANA);
+            lyokoForest5.Activate(APIActivator.XANA);
+            lyokoSector51.Hijack(APIActivator.HOPPER);
+            lyokoIce2.Deactivate();
+            lyokoDesert3.Deactivate();
+            lyokoMountain4.Deactivate();
+            lyokoForest5.Deactivate();
         }
     }
 }

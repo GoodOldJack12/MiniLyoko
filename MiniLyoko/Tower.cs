@@ -17,7 +17,7 @@ public class Tower : ITower
         public ISector Sector { get; }
         public APIActivator Activator { get; set; } = APIActivator.NONE;
 
-       public void activate(APIActivator activator)
+       public void Activate(APIActivator activator)
         {
             if (!Activated && activator != APIActivator.NONE)
             {
@@ -26,7 +26,7 @@ public class Tower : ITower
             }
         }
         
-        public void deactivate()
+        public void Deactivate()
         {
             if (Activated)
             {
@@ -35,7 +35,7 @@ public class Tower : ITower
             }
         }
 
-        public void hijack(APIActivator newActivator)
+        public void Hijack(APIActivator newActivator)
         {
             if (Activated && newActivator != APIActivator.NONE)
             {
