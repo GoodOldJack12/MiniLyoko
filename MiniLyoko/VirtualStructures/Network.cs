@@ -5,6 +5,7 @@ namespace MiniLyoko
 {
     public class Network
     {
+        private bool seeded = false;
         public List<IVirtualWorld> Vworlds { get; }
         public Network()
         {
@@ -25,18 +26,25 @@ namespace MiniLyoko
 
         private void Seed()
         {
-            VirtualWorld lyoko = new VirtualWorld("Lyoko");
-            Sector iceSector = new Sector(lyoko, "ice",10);
-            Sector forestSector = new Sector(lyoko, "forest",10);
-            Sector carthageSector = new Sector(lyoko,"carthage",1);
-            Sector desertSector = new Sector(lyoko, "desert",10);
+            if (seeded)
+            {
+                VirtualWorld lyoko = new VirtualWorld("Lyoko");
+                Sector iceSector = new Sector(lyoko, "ice",10);
+                Sector forestSector = new Sector(lyoko, "forest",10);
+                Sector carthageSector = new Sector(lyoko,"carthage",1);
+                Sector desertSector = new Sector(lyoko, "desert",10);
             
-            Vworlds.Add(lyoko);
+                Vworlds.Add(lyoko);
             
-            VirtualWorld forestReplica = new VirtualWorld("ForestReplica");
-            Sector forestreplicasector = new Sector(forestReplica,"forest",10);
+                VirtualWorld forestReplica = new VirtualWorld("ForestReplica");
+                Sector forestreplicasector = new Sector(forestReplica,"forest",10);
 
-            Vworlds.Add(forestReplica);
+                Vworlds.Add(forestReplica);
+                seeded = true;
+            }
+            
         }
+        
+        
     }
 }
