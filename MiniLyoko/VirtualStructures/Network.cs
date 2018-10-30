@@ -7,7 +7,7 @@ namespace MiniLyoko
     public class Network
     {
         private bool seeded = false;
-        public List<VirtualWorld> Vworlds { get; }
+        public List<VirtualWorld> Vworlds { get; private set; }
         public Network()
         {
             Seed();
@@ -29,6 +29,7 @@ namespace MiniLyoko
         {
             if (seeded)
             {
+                Vworlds = new List<VirtualWorld>();
                 VirtualWorld lyoko = new VirtualWorld("Lyoko");
                 Sector iceSector = new Sector(lyoko, "ice",10);
                 Sector forestSector = new Sector(lyoko, "forest",10);
