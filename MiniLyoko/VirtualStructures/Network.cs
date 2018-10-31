@@ -63,7 +63,7 @@ namespace MiniLyoko
 
         public void ActivateRandom(APIActivator activator = APIActivator.XANA)
         {
-            string vworld = Vworlds[new Random().Next(Vworlds.Count)].Name;
+            string vworld = Vworlds[new Random().Next(Vworlds.Count-1)].Name;
             ActivateRandom(vworld,activator);
         }
         

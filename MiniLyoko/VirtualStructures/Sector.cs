@@ -42,7 +42,7 @@ namespace MiniLyoko
 
         public void ActivateRandom(APIActivator activator = APIActivator.XANA)
         {
-            int randomint = new Random().Next(Towers.Count);
+            int randomint = new Random().Next(Towers.Count-1);
             GetTower(randomint).Activate(activator);
         }
     }

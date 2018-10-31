@@ -31,7 +31,7 @@ namespace MiniLyoko
 
         public void ActivateRandom(APIActivator activator = APIActivator.XANA)
         {
-            int randomint = new Random().Next(Sectors.Count);
+            int randomint = new Random().Next(Sectors.Count-1);
             Sector sector = Sectors[randomint] as Sector;
             sector?.ActivateRandom(activator);
         }
