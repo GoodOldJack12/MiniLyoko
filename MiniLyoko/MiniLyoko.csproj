@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LyokoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\IFSCLAPI\LyokoAPI\bin\Debug\LyokoAPI.dll</HintPath>
+      <HintPath>..\..\LyokoAPI\LyokoAPI\bin\Debug\LyokoAPI.dll</HintPath>
     </Reference>
     <Reference Include="LyokoPluginLoader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\LyokoPluginLoader\LyokoPluginLoader\bin\Debug\LyokoPluginLoader.dll</HintPath>

@@ -1,59 +1,39 @@
 ﻿using System;
 using LyokoAPI;
-using LyokoPluginLoader;
+using LyokoAPI.API;
+using LyokoAPI.Events;
+using LyokoAPI.VirtualStructures;
+using LyokoAPI.VirtualStructures.Interfaces;
 
 namespace MiniLyoko
 {
     internal class Program
     {
-        public static Network Network = new Network();
-        public static LyokoAPI.APISuperScan SuperScan = new APISuperScan();
         public static void Main(string[] args)
         {
             Console.Clear();
-            //DebugListener.Initialize();
-            LyokoPluginLoader.PluginLoader pluginLoader = new PluginLoader("Plugins");
-            ShowMenu();
-            
-        }
-
-
-        private static void ShowMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("Welcome to Mini Lyoko!\n Make your selection:");
-            Console.WriteLine("1: Activate a random tower\n2: deactivate all towers");
-            
-            if (Int32.TryParse(Console.ReadLine(),out var selection))
-            {
-                DoSelection(selection);
-            }
-            else
-            {
-                Console.WriteLine("Selection wasnt a number!");
-            }
-        }
-
-        private static void DoSelection(int selection)
-        {
-            switch (selection)
-            {
-                case 1 : Network.ActivateRandom(); break;
-                case 2 : DeactivateAll(); break;
-                default: Console.WriteLine("Invalid selection!"); break;
-            }
-
-            Console.WriteLine("Press any key to return to the menu");
-            Console.ReadKey();
-            ShowMenu();
-        }
-
-        private static void DeactivateAll()
-        {
-            foreach (var registeredTower in SuperScan.GetAllRegisteredTowers())
-            {
-                (registeredTower as Tower)?.Deactivate();
-            }
+            DebugListener.Initialize();
+            IVirtualWorld lyoko = new APIVirtualWorld("lyoko");
+            ISector lyokoForest = new APISector(lyoko, "Forest");
+            ISector lyokoIce = new APISector(lyoko, "Ice");
+            ISector lyokoDesert = new APISector(lyoko, "Desert");
+            ISector lyokoMountain = new APISector(lyoko, "Mountain");
+            ISector lyokoSector5 = new APISector(lyoko, "Sector5");
+            Tower lyokoSector51 = new Tower(1, lyokoSector5);
+            Tower lyokoIce2 = new Tower(2, lyokoIce);
+            Tower lyokoDesert3 = new Tower(3, lyokoDesert);
+            Tower lyokoMountain4 = new Tower(4, lyokoMountain);
+            Tower lyokoForest5 = new Tower(5, lyokoForest);
+            lyokoSector51.Activate(APIActivator.XANA);
+            lyokoIce2.Activate(APIActivator.XANA);
+            lyokoDesert3.Activate(APIActivator.XANA);
+            lyokoMountain4.Activate(APIActivator.XANA);
+            lyokoForest5.Activate(APIActivator.XANA);
+            lyokoSector51.Hijack(APIActivator.HOPPER);
+            lyokoIce2.Deactivate();
+            lyokoDesert3.Deactivate();
+            lyokoMountain4.Deactivate();
+            lyokoForest5.Deactivate();
         }
     }
 }
