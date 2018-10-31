@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
@@ -7,7 +8,7 @@ namespace MiniLyoko
     public class Network
     {
         private bool seeded = false;
-        public List<VirtualWorld> Vworlds { get; }
+        public List<VirtualWorld> Vworlds { get; private set; }
         public Network()
         {
             Seed();
@@ -27,8 +28,9 @@ namespace MiniLyoko
 
         private void Seed()
         {
-            if (seeded)
+            if (!seeded)
             {
+                Vworlds = new List<VirtualWorld>();
                 VirtualWorld lyoko = new VirtualWorld("Lyoko");
                 Sector iceSector = new Sector(lyoko, "ice",10);
                 Sector forestSector = new Sector(lyoko, "forest",10);
@@ -52,6 +54,17 @@ namespace MiniLyoko
             {
                 GetWorld(virtualworld).ActivateTower(sector,number,activator);
             }
+        }
+
+        public void ActivateRandom(string vworld,APIActivator activator = APIActivator.XANA)
+        {
+            GetWorld(vworld).ActivateRandom(activator);
+        }
+
+        public void ActivateRandom(APIActivator activator = APIActivator.XANA)
+        {
+            string vworld = Vworlds[new Random().Next(Vworlds.Count-1)].Name;
+            ActivateRandom(vworld,activator);
         }
         
     }
