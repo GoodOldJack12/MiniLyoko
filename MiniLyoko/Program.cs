@@ -12,7 +12,6 @@ namespace MiniLyoko
         public static void Main(string[] args)
         {
             Console.Clear();
-            LyokoAPI.LyokoAPI.EnsureInitialized();
             DebugListener.Initialize();
             IVirtualWorld lyoko = new APIVirtualWorld("lyoko");
             ISector lyokoForest = new APISector(lyoko, "Forest");
