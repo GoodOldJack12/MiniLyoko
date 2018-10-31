@@ -1,3 +1,4 @@
+using System;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
 
@@ -37,6 +38,12 @@ namespace MiniLyoko
         public void ActivateTower(int number, APIActivator activator)
         {
             GetTower(number).Activate(activator);
+        }
+
+        public void ActivateRandom(APIActivator activator = APIActivator.XANA)
+        {
+            int randomint = new Random().Next(Towers.Count);
+            GetTower(randomint).Activate(activator);
         }
     }
 }

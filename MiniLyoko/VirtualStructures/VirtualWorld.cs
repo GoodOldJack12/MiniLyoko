@@ -1,3 +1,4 @@
+using System;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
 
@@ -24,8 +25,15 @@ namespace MiniLyoko
         {
             if (hasSector(Name))
             {
-               (GetSector(sector) as Sector).ActivateTower(number,activator);
+               (GetSector(sector) as Sector)?.ActivateTower(number,activator);
             }
+        }
+
+        public void ActivateRandom(APIActivator activator = APIActivator.XANA)
+        {
+            int randomint = new Random().Next(Sectors.Count);
+            Sector sector = Sectors[randomint] as Sector;
+            sector?.ActivateRandom(activator);
         }
 
     }

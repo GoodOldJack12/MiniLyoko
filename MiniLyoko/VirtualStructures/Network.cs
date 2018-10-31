@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
@@ -53,6 +54,17 @@ namespace MiniLyoko
             {
                 GetWorld(virtualworld).ActivateTower(sector,number,activator);
             }
+        }
+
+        public void ActivateRandom(string vworld,APIActivator activator = APIActivator.XANA)
+        {
+            GetWorld(vworld).ActivateRandom(activator);
+        }
+
+        public void ActivateRandom(APIActivator activator = APIActivator.XANA)
+        {
+            string vworld = Vworlds[new Random().Next(Vworlds.Count)].Name;
+            ActivateRandom(vworld,activator);
         }
         
     }
