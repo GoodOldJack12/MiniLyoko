@@ -22,7 +22,7 @@ namespace MiniLyoko
         {
             Console.Clear();
             Console.WriteLine("Welcome to Mini Lyoko!\n Make your selection:");
-            Console.WriteLine("1: Activate a random tower\n 2: deactivate all towers");
+            Console.WriteLine("1: Activate a random tower\n2: deactivate all towers");
             
             if (Int32.TryParse(Console.ReadLine(),out var selection))
             {
