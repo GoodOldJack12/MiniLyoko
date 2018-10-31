@@ -4,6 +4,7 @@ using LyokoAPI.API;
 using LyokoAPI.Events;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
+using LyokoPluginLoader;
 
 namespace MiniLyoko
 {
@@ -12,8 +13,9 @@ namespace MiniLyoko
         public static void Main(string[] args)
         {
             Console.Clear();
-            LyokoAPI.LyokoAPI.EnsureInitialized();
-            DebugListener.Initialize();
+            //DebugListener.Initialize();
+            LyokoPluginLoader.PluginLoader pluginLoader = new PluginLoader("Plugins");
+            
             IVirtualWorld lyoko = new APIVirtualWorld("lyoko");
             ISector lyokoForest = new APISector(lyoko, "Forest");
             ISector lyokoIce = new APISector(lyoko, "Ice");

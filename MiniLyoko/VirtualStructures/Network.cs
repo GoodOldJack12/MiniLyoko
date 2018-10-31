@@ -27,7 +27,7 @@ namespace MiniLyoko
 
         private void Seed()
         {
-            if (seeded)
+            if (!seeded)
             {
                 Vworlds = new List<VirtualWorld>();
                 VirtualWorld lyoko = new VirtualWorld("Lyoko");
