@@ -9,3 +9,12 @@ C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\bin\Debug\LyokoPluginLoa
 C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csproj.CopyComplete
 C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.exe
 C:\Users\TenDRILLL\Documents\GitHub\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.pdb
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\bin\Debug\MiniLyoko.exe
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\bin\Debug\MiniLyoko.pdb
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\bin\Debug\LyokoAPI.dll
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\bin\Debug\LyokoAPI.pdb
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csprojAssemblyReference.cache
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csproj.CoreCompileInputs.cache
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.csproj.CopyComplete
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.exe
+C:\Users\KaruzoDEV\RiderProjects\MiniLyoko\MiniLyoko\obj\Debug\MiniLyoko.pdb
