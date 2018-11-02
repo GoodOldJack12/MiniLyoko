@@ -13,6 +13,7 @@ namespace MiniLyoko
             Console.Clear();
             //DebugListener.Initialize();
             LyokoPluginLoader.PluginLoader pluginLoader = new PluginLoader("Plugins");
+            Console.ReadKey();
             ShowMenu();
             
         }
