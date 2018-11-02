@@ -22,7 +22,7 @@ public class Tower : ITower
             if (!Activated && activator != APIActivator.NONE)
             {
                 Activator = activator;
-                TowerActivationEvent.Call(this, Activator.ToString());
+                TowerActivationEvent.Call(this);
             }
         }
         
