@@ -15,7 +15,7 @@ namespace MiniLyoko
             LyokoPluginLoader.PluginLoader pluginLoader = new PluginLoader("Plugins");
             Console.ReadKey();
             ShowMenu();
-            
+            pluginLoader.DisableAll();
         }
 
 
@@ -56,6 +56,7 @@ namespace MiniLyoko
                 (registeredTower as Tower)?.Deactivate();
             }
         }
+        
     
     }
 }
