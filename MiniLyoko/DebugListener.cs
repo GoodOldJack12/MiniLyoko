@@ -18,9 +18,9 @@ namespace MiniLyoko
             TowerHijackEvent.Subscribe(onTowerHijacked);
         }
 
-        private static void onXanaAwaken(ITower tower)
+        private static void onXanaAwaken()
         {
-            Console.WriteLine("Xana has launched an attack, it activated: {0} {1}",tower.Sector.Name,tower.Number);
+            Console.WriteLine("Xana has launched an attack!");
         }
 
         private static void onTowerActivation(ITower tower) //TODO: Jack fix the activation listener.
