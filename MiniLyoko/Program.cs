@@ -7,12 +7,12 @@ namespace MiniLyoko
     internal class Program
     {
         public static Network Network = new Network();
-        public static LyokoAPI.APISuperScan SuperScan = new APISuperScan();
+        public static APISuperScan SuperScan = APISuperScan.GetOrCreate();
         public static void Main(string[] args)
         {
             Console.Clear();
             //DebugListener.Initialize();
-            LyokoPluginLoader.PluginLoader pluginLoader = new PluginLoader("Plugins");
+            PluginLoader pluginLoader = new PluginLoader("Plugins");
             Console.ReadKey();
             ShowMenu();
             pluginLoader.DisableAll();
