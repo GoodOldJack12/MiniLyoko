@@ -6,10 +6,7 @@ namespace MiniLyoko
 {
     public class Sector : APISector
     {
-        public Sector(IVirtualWorld world, string name, params ITower[] towers) : base(world, name, towers)
-        {
-        } 
-        public Sector(IVirtualWorld world, string name, int towers) : this(world,name)
+        public Sector(IVirtualWorld world, string name, int towers) : base(world,name,towers)
         {
             if (!world.Sectors.Contains(this))
             {
@@ -21,7 +18,7 @@ namespace MiniLyoko
             }        
         }
 
-        public Sector(string virtualworldName, string sectorName, params ITower[] towers) : base(virtualworldName, sectorName, towers)
+        public Sector(string virtualworldName, string sectorName, int towers) : base(virtualworldName, sectorName, towers)
         {
         }
 
