@@ -8,14 +8,14 @@ namespace MiniLyoko
     {
         public Sector(IVirtualWorld world, string name, int towers) : base(world,name,towers)
         {
-            if (!world.Sectors.Contains(this))
+            /*if (!world.Sectors.Contains(this))
             {
                 world.Sectors.Add(this);
             }
             for (int i = 1; i < towers+1; i++)
             {
                 Towers.Add(new Tower(i,this));
-            }        
+            }      */  
         }
 
         public Sector(string virtualworldName, string sectorName, int towers) : base(virtualworldName, sectorName, towers)
