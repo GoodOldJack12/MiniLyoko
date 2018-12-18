@@ -1,5 +1,6 @@
 ﻿using System;
 using LyokoAPI;
+using LyokoAPI.VirtualStructures;
 using LyokoPluginLoader;
 
 namespace MiniLyoko
@@ -23,7 +24,7 @@ namespace MiniLyoko
         {
             Console.Clear();
             Console.WriteLine("Welcome to Mini Lyoko!\n Make your selection:");
-            Console.WriteLine("1: Activate a random tower\n2: deactivate all towers");
+            Console.WriteLine("1: Activate a random tower\n2: activate a random HOPPER tower\n3: activate a random JEREMIE tower\n4: Hijack a tower \n5: deactivate all towers");
             
             if (Int32.TryParse(Console.ReadLine(),out var selection))
             {
@@ -40,7 +41,10 @@ namespace MiniLyoko
             switch (selection)
             {
                 case 1 : Network.ActivateRandom(); break;
-                case 2 : DeactivateAll(); break;
+                case 2 : Network.ActivateRandom(APIActivator.HOPPER); break;
+                case 3 : Network.ActivateRandom(APIActivator.JEREMIE);break;
+                case 4 : HijackTower();break;
+                case 5 : DeactivateAll(); break;
                 default: Console.WriteLine("Invalid selection!"); break;
             }
 
@@ -54,6 +58,18 @@ namespace MiniLyoko
             foreach (var registeredTower in SuperScan.GetAllRegisteredTowers())
             {
                 (registeredTower as Tower)?.Deactivate();
+            }
+        }
+
+        private static void HijackTower()
+        {
+            if (SuperScan.XanaIsAttacking)
+            {
+                (SuperScan.XanaTowers[0] as Tower)?.Hijack(APIActivator.JEREMIE);
+            }
+            else
+            {
+                Console.WriteLine("There aren't any xana towers to hijack.");
             }
         }
         
