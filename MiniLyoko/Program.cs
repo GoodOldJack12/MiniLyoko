@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using LyokoAPI;
+using LyokoAPI.Events;
 using LyokoAPI.VirtualStructures;
 using LyokoPluginLoader;
 
@@ -12,8 +14,20 @@ namespace MiniLyoko
         public static void Main(string[] args)
         {
             Console.Clear();
+            var consoleLogger = LyokoLogger.Subscribe(msg => Console.WriteLine(msg));
             //DebugListener.Initialize();
             PluginLoader pluginLoader = new PluginLoader("Plugins");
+            bool isInList = false;
+            foreach (var plugin in pluginLoader.Plugins)
+            {
+                if (plugin.Name.Contains("logger")){
+                    isInList = true;
+                }
+            }
+            if (isInList)
+            {
+                LyokoLogger.Unsubscribe(consoleLogger);
+            }
             Console.ReadKey();
             ShowMenu();
             pluginLoader.DisableAll();
