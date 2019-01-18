@@ -47,10 +47,9 @@ namespace MiniLyoko
             
             Boolean found = false;
             foreach (Tower tower in randomTowers) {
-                if (!tower.Activated) {
+                if (!found && !tower.Activated) {
                     tower.Activate(activator);
                     found = true;
-                    break;
                 }
             }
 

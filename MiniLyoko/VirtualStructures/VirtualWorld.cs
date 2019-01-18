@@ -40,9 +40,10 @@ namespace MiniLyoko
             Boolean found = false;
             foreach (Sector sector in randomSectors) {
                 try {
-                    sector.ActivateRandom(activator);
-                    found = true;
-                    break;
+                    if (!found) {
+                        sector.ActivateRandom(activator);
+                        found = true;
+                    }
                 }
                 catch (NoFreeTowersException) {
                     //continue

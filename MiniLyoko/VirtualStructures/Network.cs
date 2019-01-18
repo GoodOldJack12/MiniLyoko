@@ -70,9 +70,10 @@ namespace MiniLyoko
             Boolean found = false;
             foreach (VirtualWorld virtualWorld in randomVworlds) {
                 try {
-                    virtualWorld.ActivateRandom(activator);
-                    found = true;
-                    break;
+                    if (!found) {
+                        virtualWorld.ActivateRandom(activator);
+                        found = true;
+                    }
                 }
                 catch (NoFreeSectorsException) {
                     //continue
