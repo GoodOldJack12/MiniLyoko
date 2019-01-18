@@ -1,6 +1,10 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
+using MiniLyoko.Exceptions;
 
 namespace MiniLyoko
 {
@@ -13,12 +17,12 @@ namespace MiniLyoko
 
         public bool hasSector(string name)
         {
-            return GetSector(Name) != null;
+            return GetSector(name) != null;
         }
 
         public ISector GetSector(string name)
         {
-            return Sectors.Find(sector=>sector.Name.Equals(Name));
+            return Sectors.Find(sector=>sector.Name.Equals(name));
         }
 
         public void ActivateTower(string sector, int number, APIActivator activator)
@@ -31,10 +35,23 @@ namespace MiniLyoko
 
         public void ActivateRandom(APIActivator activator = APIActivator.XANA)
         {
-            int randomint = new Random().Next(Sectors.Count-1);
-            Sector sector = Sectors[randomint] as Sector;
-            sector?.ActivateRandom(activator);
-        }
+            List<Sector> randomSectors = Program.ShuffleList(Sectors.Cast<Sector>().ToList());
+            
+            Boolean found = false;
+            foreach (Sector sector in randomSectors) {
+                try {
+                    sector.ActivateRandom(activator);
+                    found = true;
+                    break;
+                }
+                catch (NoFreeTowersException) {
+                    //continue
+                }
+            }
 
+            if (!found) {
+                throw new NoFreeSectorsException(this);
+            }
+        }
     }
 }

@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
+using MiniLyoko.Exceptions;
 
 namespace MiniLyoko
 {
@@ -58,13 +60,28 @@ namespace MiniLyoko
 
         public void ActivateRandom(string vworld,APIActivator activator = APIActivator.XANA)
         {
-            GetWorld(vworld).ActivateRandom(activator);
+            GetWorld(vworld)?.ActivateRandom(activator);
         }
 
         public void ActivateRandom(APIActivator activator = APIActivator.XANA)
         {
-            string vworld = Vworlds[new Random().Next(Vworlds.Count-1)].Name;
-            ActivateRandom(vworld,activator);
+            List<VirtualWorld> randomVworlds = Program.ShuffleList(Vworlds);
+            
+            Boolean found = false;
+            foreach (VirtualWorld virtualWorld in randomVworlds) {
+                try {
+                    virtualWorld.ActivateRandom(activator);
+                    found = true;
+                    break;
+                }
+                catch (NoFreeSectorsException) {
+                    //continue
+                }
+            }
+
+            if (!found) {
+                throw new NoFreeVirtualWorldsException();
+            }
         }
         
     }

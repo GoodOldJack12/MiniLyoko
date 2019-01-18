@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DebugListener.cs" />
+    <Compile Include="Exceptions\NoFreeSectorsException.cs" />
+    <Compile Include="Exceptions\NoFreeTowersException.cs" />
+    <Compile Include="Exceptions\NoFreeVirtualWorldsException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VirtualStructures\Network.cs" />

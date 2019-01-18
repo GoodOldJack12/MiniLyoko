@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using LyokoAPI.VirtualStructures;
 using LyokoAPI.VirtualStructures.Interfaces;
+using MiniLyoko.Exceptions;
 
 namespace MiniLyoko
 {
@@ -40,8 +43,20 @@ namespace MiniLyoko
 
         public void ActivateRandom(APIActivator activator = APIActivator.XANA)
         {
-            int randomint = new Random().Next(Towers.Count)+1;
-            GetTower(randomint)?.Activate(activator);
+            List<Tower> randomTowers = Program.ShuffleList(Towers.Cast<Tower>().ToList());
+            
+            Boolean found = false;
+            foreach (Tower tower in randomTowers) {
+                if (!tower.Activated) {
+                    tower.Activate(activator);
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                throw new NoFreeTowersException(this);
+            }
         }
     }
 }
