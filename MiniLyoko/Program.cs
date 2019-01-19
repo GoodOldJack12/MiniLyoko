@@ -43,13 +43,15 @@ namespace MiniLyoko
             Console.WriteLine("Welcome to MiniLyoko!\n Make your selection:");
             Console.WriteLine("1: Activate a random tower\n2: Activate a random HOPPER tower\n3: Activate a random JEREMIE tower\n4: Hijack a tower \n5: Deactivate all towers");
             
-            if (Int32.TryParse(Console.ReadLine(),out var selection))
-            {
+            if (Int32.TryParse(Console.ReadLine(),out var selection)) {
                 DoSelection(selection);
             }
             else
             {
                 Console.WriteLine("Selection wasn't a number!");
+                Console.WriteLine("Press any key to return to the menu");
+                Console.ReadKey();
+                ShowMenu();
             }
         }
 
@@ -59,8 +61,8 @@ namespace MiniLyoko
                 switch (selection) {
                     case 1 : Network.ActivateRandom(); break;
                     case 2 : Network.ActivateRandom(APIActivator.HOPPER); break;
-                    case 3 : Network.ActivateRandom(APIActivator.JEREMIE);break;
-                    case 4 : HijackTower();break;
+                    case 3 : Network.ActivateRandom(APIActivator.JEREMIE); break;
+                    case 4 : HijackTower(); break;
                     case 5 : DeactivateAll(); break;
                     default: Console.WriteLine("Invalid selection!"); break;
                 }
